@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.tanmaku.animejournal.AddItemActivity"
+    android:id="@+id/main_layout"
+    android:elevation="20dp"
+    android:isScrollContainer="true"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/anime_sn"
+            android:id="@+id/textView" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/anime_number"
+            android:hint="@string/anime_sn_hint"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@color/light" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/anime_episode"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/anime_number"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:hint="@string/anime_episode_hint"
+            android:id="@+id/anime_episode"
+            android:layout_below="@+id/textView3"
+            android:backgroundTint="@color/light" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/anime_date"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/anime_episode"/>
+
+
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/datePicker"
+            android:layout_gravity="center_horizontal"
+            android:datePickerMode="spinner"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:startYear="2000"
+            android:calendarViewShown="false" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/datePicker"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <Button style="?android:buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:id="@+id/cancel_button"
+            android:textColor="@color/light"
+            android:onClick="exit" />
+        <Button style="?android:buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_item"
+            android:id="@+id/save_button"
+            android:onClick="trySave"
+            android:textColor="@color/light" />
+
+    </LinearLayout>
+
+</RelativeLayout>
