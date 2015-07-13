@@ -31,9 +31,9 @@ public class AddItemActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_item);
-        datePicker=(DatePicker)findViewById(R.id.datePicker);
-        animeNumber=(EditText)findViewById(R.id.anime_number);
-        animeEpisode=(EditText)findViewById(R.id.anime_episode);
+        datePicker=(DatePicker)findViewById(R.id.addItemDatePicker);
+        animeNumber=(EditText)findViewById(R.id.addItemAnimeNumber);
+        animeEpisode=(EditText)findViewById(R.id.addItemAnimeEpisode);
         Date currentDate=new Date();
         datePicker.setMaxDate(currentDate.getTime());
     }

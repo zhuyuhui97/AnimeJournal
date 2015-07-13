@@ -17,7 +17,6 @@ import java.util.List;
 
 
 public class MainActivity extends ActionBarActivity {
-    int a=0;
     ListView mainListView;
 
     public void addItem(){
@@ -92,14 +91,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onResume(){
         super.onResume();
-
             refresh();
-            a++;
-            TextView t=(TextView) findViewById(R.id.test);
-            t.setText("第"+a+"次被唤醒");
-
-
-
     }
 
 
