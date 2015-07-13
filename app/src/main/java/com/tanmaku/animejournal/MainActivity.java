@@ -55,7 +55,7 @@ public class MainActivity extends ActionBarActivity {
             // Because the list item contains multiple touch targets, you should not override
             // onListItemClick. Instead, set a click listener for each target individually.
 
-            convertView.findViewById(R.id.detailArea).setOnClickListener(
+            convertView.findViewById(R.id.mainListDetailArea).setOnClickListener(
                     new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -65,7 +65,7 @@ public class MainActivity extends ActionBarActivity {
                         }
                     });
 
-            convertView.findViewById(R.id.itemImage).setOnClickListener(
+            convertView.findViewById(R.id.mainListItemImage).setOnClickListener(
                     new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {

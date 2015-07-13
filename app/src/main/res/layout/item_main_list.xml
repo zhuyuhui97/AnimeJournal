@@ -19,26 +19,26 @@
         android:focusable="true"
         android:gravity="center_vertical"
         android:background="?android:selectableItemBackground"
-        android:id="@+id/detailArea">
+        android:id="@+id/mainListDetailArea">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Item"
-            android:id="@+id/itemTitle" />
+            android:id="@+id/mainListItemTitle" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/itemDate"
+            android:id="@+id/mainListItemDate"
             android:text="Date"/>
     </LinearLayout>
 
     <ImageView
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:id="@+id/itemImage"
+        android:id="@+id/mainListItemImage"
         android:clickable="true"
         android:focusable="true"
         android:background="?android:selectableItemBackground"
